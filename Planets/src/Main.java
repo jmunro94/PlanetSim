@@ -7,9 +7,11 @@ public class Main extends JPanel {
     static final float gravConst = 0.67f;
     static ArrayList<Body> bods = new ArrayList<>();
     static int ofset, screenSize = 1000;
-    static int scalefactor = 1;
+    static int scalefactor = 2;
+    static int speed = 1;
 
-    public static final double DELTA_T = 1 / 30000.0;
+    public static final double DELTA_T = speed / 30000.0;
+
 
     @Override
     public void paint(Graphics g) {
